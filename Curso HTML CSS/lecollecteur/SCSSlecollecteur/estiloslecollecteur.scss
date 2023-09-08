@@ -1,0 +1,413 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+//carousel del index//
+.sec {
+    width: 55%;
+    position: relative;
+}
+
+.carousel-control-prev-icon {
+    position: relative;
+    left: 50%;
+}
+
+.carousel-inner img {
+    display: block;
+    height: auto;
+    max-width: 100%;
+}
+
+.carousel-caption h3 {
+    color: #000;
+    font-size: 50px;
+}
+
+.carousel-indicators li {
+    height: 20px;
+    width: 20px;
+    border-radius: 100%;
+    border: 2px solid #000;
+}
+
+body {
+    background-color: #f5f5f5;
+}
+
+//Bloque BEM//
+.nav__ul--propiedades {
+    width: 100%;
+    background: #000;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.menu li {
+    position: relative;
+    display: inline-block;
+}
+
+.menu li a {
+    padding: 10px 20px;
+    display: inline-block;
+    color: #FFFFFF;
+    text-decoration: none;
+    font-family: 'Zen Kaku Gothic Antique', sans-serif;
+}
+
+.menu li a:hover {
+    background: #ccc;
+    color: #000;
+    transition: all .3s;
+}
+
+//submenú//
+
+.submenu {
+    position: absolute;
+    width: 200%;
+    display: none;
+}
+
+.submenu li a {
+    display: block;
+    padding: 15 px;
+    color: rgb(133, 133, 133);
+}
+
+.menu li:hover .submenu {
+    display: block;
+}
+
+//Bloque BEM//
+.div--fondologo {
+    background-color: #D6CA1B;
+}
+
+//Breadcrumbs//
+    $breadcrumb-divider: quote(">");
+    $breadcrumb-font-size: null;
+    $breadcrumb-padding-y: 5rem;
+    $breadcrumb-padding-x: 0;
+    $breadcrumb-item-padding-x: 2rem;
+    $breadcrumb-margin-bottom: 3rem;
+    $breadcrumb-bg: null;
+    $breadcrumb-divider-color: #000;
+    $breadcrumb-active-color: #f5f5f5;
+    $breadcrumb-divider-flipped: $breadcrumb-divider;
+    $breadcrumb-border-radius: null;
+
+//Bloque BEM//
+.body__h1--formato {
+    font-family: 'Zen Kaku Gothic Antique', sans-serif;
+    font-size: 800;
+    font-style: normal;
+    text-align: center;
+    line-height: 100px;
+    background-color: rgb(168, 166, 166);
+}
+
+
+//Animación del título 1 del home//
+#titulo1 {
+    animation-name: titulo1;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes titulo1 {
+    0% {
+        transform: translateX(-500px);
+    }
+
+    100% {
+        transform: translateX(500px);
+    }
+}
+
+//Bloque BEM//
+.main__h2--propiedades {
+    font-family: 'Zen Kaku Gothic Antique', sans-serif;
+    font-size: 800;
+    font-style: normal;
+    text-align: center;
+    line-height: 60px;
+}
+
+//section//
+iframe {
+    display: block;
+    margin: 0 auto;
+}
+
+.titulo {
+    font-family: 'Zen Kaku Gothic Antique', sans-serif;
+    font-size: 800;
+    font-style: normal;
+    text-align: center;
+    line-height: 60px;
+}
+
+.tabla {
+    border: 4px solid #ccc;
+    border-collapse: collapse;
+    align-content: center;
+    width: 500px;
+    margin: auto;
+}
+
+
+.tabla td {
+    border: 2px solid #ccc;
+    padding: 20px;
+    text-align: center;
+}
+
+.tabla th {
+    border: 2px solid #ccc;
+    padding: 20px;
+    background-color: bisque;
+}
+
+.tabla tr:hover {
+    background-color: #ccc;
+}
+
+table,
+th {
+    font-family: 'Zen Kaku Gothic Antique', sans-serif;
+    font-weight: bold;
+}
+
+table,
+td {
+    font-family: 'Zen Kaku Gothic Antique', sans-serif;
+    font-weight: normal;
+}
+
+.invitacion {
+    background-color: whitesmoke;
+    color: #000;
+    font-family: 'Zen Kaku Gothic Antique', sans-serif;
+    font-style: normal;
+    font-weight: lighter;
+    text-align: center;
+    text-transform: none;
+    font-size: 150%;
+    line-height: 100%;
+    text-decoration: wavy;
+    letter-spacing: 1px;
+    word-spacing: 2px;
+    height: max-content;
+}
+
+//Estilos de las galerías Sightings//
+.gallery-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid: auto rows 400px;
+    padding: 20px;
+    grid-gap: 20px;
+}
+
+.gallery__item {
+    position: relative;
+}
+
+.gallery__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.gallery__title {
+    position: absolute;
+    bottom: 0;
+    color: #D6CA1B;
+    background: linear-gradient(rgba(255, 255, 255, 0), rgba(0, 0, 0, 1));
+    width: 100%;
+    margin: 0;
+    padding: 30px;
+}
+
+.gallery__item:nth-child(2) {
+    grid-column-start: span 2;
+}
+
+.gallery__item:nth-child(3) {
+    grid-column-start: span 2;
+}
+
+.gallery__item:nth-child(4) {
+    grid-row-start: span 2;
+}
+
+.gallery__item:nth-child(6) {
+    grid-row-start: span 1;
+}
+
+.gallery__item:nth-child(8) {
+    grid-column-start: span 2;
+}
+
+
+
+//Responsive de la sección Sightings//
+@media only screen and (min-width:360px) {
+
+    .gallery-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .gallery__item:nth-child(1) {
+        grid-column-start: span 2;
+    }
+
+    .gallery__item:nth-child(4) {
+        grid-column-start: span 2;
+    }
+
+    .gallery__item:nth-child(5) {
+        grid-column-start: span 2;
+    }
+
+    .gallery__item:nth-child(6) {
+        grid-column-start: span 2;
+    }
+
+    .gallery__item:nth-child(7) {
+        grid-column-start: span 2;
+    }
+
+}
+
+@media only screen and (min-width:600px) {
+    .gallery-container {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .gallery__item:nth-child(1) {
+        grid-column-start: span 2;
+    }
+
+    .gallery__item:nth-child(4) {
+        grid-column-start: span 2;
+    }
+
+    .gallery__item:nth-child(5) {
+        grid-column-start: span 2;
+    }
+
+    .gallery__item:nth-child(6) {
+        grid-column-start: span 2;
+    }
+
+    .gallery__item:nth-child(7) {
+        grid-column-start: span 2;
+    }
+
+    .gallery__item:nth-child(8) {
+        grid-column-start: span 4;
+    }
+
+    .gallery__title {
+        font-size: 16px;
+        padding: 10px;
+    }
+}
+
+@media only screen and (min-width:600px) {
+    .gallery-container {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .gallery__item:nth-child(1) {
+        grid-column-start: span 2;
+    }
+
+    .gallery__item:nth-child(4) {
+        grid-column-start: span 2;
+    }
+
+    .gallery__item:nth-child(5) {
+        grid-column-start: span 2;
+    }
+
+    .gallery__item:nth-child(6) {
+        grid-column-start: span 2;
+    }
+
+    .gallery__item:nth-child(7) {
+        grid-column-start: span 2;
+    }
+
+    .gallery__item:nth-child(8) {
+        grid-column-start: span 4;
+    }
+
+    .gallery__title {
+        font-size: 18px;
+        padding: 20px;
+    }
+}
+
+@media only screen and (min-width:1024px) {
+    .gallery-container {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .gallery__item:nth-child(1) {
+        grid-column-start: span 2;
+    }
+
+    .gallery__item:nth-child(4) {
+        grid-column-start: span 2;
+    }
+
+    .gallery__item:nth-child(5) {
+        grid-column-start: span 2;
+    }
+
+    .gallery__item:nth-child(6) {
+        grid-column-start: span 2;
+    }
+
+    .gallery__item:nth-child(7) {
+        grid-column-start: span 2;
+    }
+
+    .gallery__item:nth-child(8) {
+        grid-column-start: span 4;
+    }
+
+    .gallery__title {
+        font-size: 20px;
+        padding: 25px;
+    }
+}
+
+//Estilos al formulario//
+
+.formulario {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form {
+    width: 50%;
+    height: 100%;
+    box-shadow: 0 0 5px rgba(#000, .5);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 20px;
+}

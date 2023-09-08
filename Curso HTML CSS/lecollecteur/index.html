@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--CSS Bootstrap-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+
+    <!--Carousel Bootstrap-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <!--CDN Font Awesome-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+      integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!--Metaetiquetas-->
+    <title>Le Collecteur: Todas las colecciones</title>
+    <meta name="description" content="Le Collecteur reune todas las colecciones por temporada de las casas de moda más importantes. Incluye los looks de las colecciones, fotos de las celebridades invitadas a los desfiles, calendario de próximos eventos e información de utilidad para los seguidores de la alta costura">
+    <meta name="keywords" content="Chanel, Prada, Dior, YSL, Gucci, McQueen, Moschino, MiuMiu, haute couture, alta costura, desfile, colecciones, Spring, Summer, Cruise, Fall, Winter">
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+Antique&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="SCSSlecollecteur\estiloslecollecteur.css"/>
+  </head>
+  <body>
+
+    <header>
+      <!--Bloque BEM-->
+      <nav class="nav__ul--propiedades">
+        <ul class="menu">
+          <li>
+            <a href="index.html">Home</a>
+          </li>
+          <li>
+            <a href="seccionesLeCollecteur/calendarioEventos.html"
+              >Calendario de eventos
+            </a>
+          </li>
+          <li>
+            <a href="seccionesLeCollecteur/coleccionesAnteriores.html"
+              >Colecciones anteriores</a
+            >
+            <ul class="submenu">
+              <li><a href="">Chanel</a></li>
+              <li><a href="">Dior</a></li>
+              <li><a href="">Prada</a></li>
+              <li><a href="">McQueen</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="seccionesLeCollecteur/looks.html">Looks</a>
+          </li>
+          <li>
+            <a href="seccionesLeCollecteur/proximasColecciones.html"
+              >Próximas colecciones</a
+            ><!--En esta sección va la tabla del desafío 2-->
+          </li>
+          <li>
+            <a href="seccionesLeCollecteur/sightings.html">Sightings</a>
+          </li>
+          <li>
+            <a href="seccionesLeCollecteur/uneteAlhive.html">Unete al hive</a
+            ><!--En esta sección se incluye el formulario del desafío 2-->
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <!--Bloque BEM-->
+    <div class="div--fondologo">
+      <img src="seccionesLeCollecteur/img/LogoLeCollecteur.png" width="200" />
+    </div>
+
+    <!--Bloque BEM-->
+    <h1 id="titulo1" class="body__h1--formato">Colección Cruise 2022</h1>
+    <br />
+    <main>
+      <section>
+
+        <!--Aqui va el carrousel para seleccionar las colecciones-->
+        <!--Carousel con Bootstrap y JavaScript-->
+    <div class="sec mx-auto" >
+      <div id="demo" class="carousel slide" data-ride="carousel">
+
+        <!-- Indicators -->
+        <ul class="carousel-indicators">
+          <li data-target="#demo" data-slide-to="0" class="active"></li>
+          <li data-target="#demo" data-slide-to="1"></li>
+          <li data-target="#demo" data-slide-to="2"></li>
+        </ul>
+      
+        <!-- The slideshow -->
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="/CSSlecollecteur/img/CarouselIndex/Cruise2022/chanel.jpg" alt="Chanel" width="810" height="440">
+            <div class="carousel-caption">
+              <h3>Chanel</h3>
+              <p></p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="/CSSlecollecteur/img/CarouselIndex/Cruise2022/dior.jpg" alt="Dior" width="810" height="440" >
+            <div class="carousel-caption">
+              <h3>Dior</h3>
+              <p></p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="/CSSlecollecteur/img/CarouselIndex/Cruise2022/moschino.jpg" alt="Moschino" width="810" height="440">
+            <div class="carousel-caption">
+              <h3>Moschino</h3>
+              <p></p>
+            </div>
+          </div>
+        </div>
+      
+        <!-- Left and right controls -->
+        <a class="carousel-control-prev" href="#demo" data-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+        </a>
+        <a class="carousel-control-next" href="#demo" data-slide="next">
+          <span class="carousel-control-next-icon"></span>
+        </a>
+      
+      </div>
+    </div>
+      <br/>
+      <br/>
+      <br/>
+
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/4XrSB3paj0o" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+      </section>
+      <br />
+      <br />
+      <!--Bloque BEM-->
+      <h2 class="main__h2--propiedades">Cruise 2022</h2>
+    </main>
+    <br />
+    <br />
+    <!--Footer-->
+    <footer class="bg-black text-white py-4">
+      <div class="container">
+        <nav class="row">
+          <!--Contacto-->
+          <ul class="col-4 list-unstyled">
+            <li class="font-weight-bold text-uppercase">Contacto</li>
+            <li>
+              <a href="#" class="text-reset">lecollecteur@gmail.com.mx</a>
+            </li>
+          </ul>
+          <!--Redes-->
+          <ul class="col-4 list-unstyled">
+            <li class="font-weight-bold text-uppercase">Redes</li>
+            <li class="d-flex justify-content-between">
+              <!--Facebook-->
+              <a target="blank" href="https://www.facebook.com/" class="text-reset"><i class="fab fa-facebook"></i></a>
+              <!--Twitter-->
+              <a target="blank" href="https://www.twitter.com/" class="text-reset"><i class="fab fa-twitter"></i></a>
+              <!--Instagram-->
+              <a target="blank" href="https://www.instagram.com/" class="text-reset"
+                ><i class="fab fa-instagram"></i
+              ></a>
+            </li>
+          </ul>
+          <!--Enlaces de interés-->
+          <ul class="col-4 list-unstyled">
+            <li class="font-weight-bold text-uppercase">Enlaces de Interés</li>
+            <li>
+              <a target="blank" href="https://elle.mx/" class="text-reset"
+                >Ir a Elle México</a
+              >
+            </li> 
+            <li>
+              <a target="blank" href="https://www.vogue.mx/" class="text-reset"
+                >Ir a Vogue México</a
+              >
+            </li>
+            <li>
+              <a
+                target="blank" href="https://www.glamour.mx/" class="text-reset"
+                >Ir a Glamour México</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </footer>
+
+    <!--CDN JAVA Bootstrap-->
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+      integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+      integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
